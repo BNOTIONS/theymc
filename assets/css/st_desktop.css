@@ -1,0 +1,16 @@
+#main {
+  width: 75%;
+  float: left;
+}
+
+footer {
+  width: 25%;
+  float: left;
+}
+
+#big_widgets > ul > li {
+  
+  float: left;
+  width: 25%;
+}
+

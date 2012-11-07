@@ -1,0 +1,18 @@
+#main {
+  overflow: hidden;
+  }
+
+#main_content {
+  width: 75%;
+  float: left;
+}
+
+#sidebar {
+  width: 25%;
+  float: right;
+}
+
+#footer_bar > ul > li, #big_widgets > ul > li {
+  float: none;
+  width: auto;
+}

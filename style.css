@@ -1,0 +1,189 @@
+/*
+Theme Name: YMC Theme
+Theme URI: http://theymc.com
+Description: The YMC Theme
+Author: Mark Reale
+Version: 1.0
+Tags: education, learning, beginner
+*/
+
+/** 
+	Normalization 
+	- the preference here is to have the normalizing styles set, and then to add DOM selectors as they need to be added
+*/
+html,
+body,
+figure,
+nav ul,
+nav li,
+.widgets > ul,
+.widgets > ul > li {
+	padding: 0;
+}
+
+html,
+body,
+figure,
+nav ul,
+nav li,
+.widgets > ul,
+.widgets > ul > li,
+footer {
+	margin: 0;
+}
+
+/** 
+	Box Sizing
+	- the preference here is to have the borders aligned to the inside of block elements so that persentage widths can be used more intelligently and reliably
+*/
+* { 
+	-moz-box-sizing: border-box; 
+	-webkit-box-sizing: border-box; 
+	box-sizing: border-box; 
+}
+
+/** 
+	Removing list styles
+	- removing list styles is common for lists that turn into navigation features as an interface develops
+*/
+nav li,
+.widgets > ul > li {
+	list-style: none;
+}
+
+/** 
+	Clear fix
+	- this is the default fix for containers of floating elements that would normally end up collapsing due to the floating parent phenomenon
+	(REFERENCE) 
+*/
+header.site,
+nav,
+.widgets,
+footer,
+#big_widgets
+ {
+	overflow: hidden;
+}
+
+/* May not be supported */
+header.site h1,
+nav ul li {
+	float: left;
+}
+
+nav ul li a {
+	display: block;
+}
+
+/* Safe styles */
+
+/* Colors */
+body {
+	background: white;
+	color: #712e2d;
+}
+
+a {
+	color: #f58537;
+}
+
+a:hover {
+	color: #f1d2c2;
+}
+
+header.site {
+	background: #f1d2c2;
+}
+
+header.site a {
+	color: #f58537;
+}
+
+nav {
+	background: white;
+}
+
+nav a,
+.widgets a {
+	color: #712e2d;
+}
+
+nav a:hover, 
+nav a:focus, 
+nav a:active,
+.widgets a:hover, 
+.widgets a:focus, 
+.widgets a:active {
+	color: #712e2d;
+}
+
+.widgets > ul > li {
+	border: 1px solid #712e2d;
+	background: whiterelations;
+	color: #712e2d;
+}
+
+/* Layout and stuff */
+body {
+	font-family: Georgia, serif;
+}
+
+h1{
+	font-size: 2em;
+}
+
+h2 {
+	font-size: 1.5em;
+}
+
+p {
+	line-height: 1.5em;
+}
+
+dt {
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+header.site {
+	padding: 5px 20px;
+}
+
+header.site h1 {
+	margin: 0;
+}
+
+header.site a {
+	text-decoration: none;
+}
+
+.widgets > ul > li {
+	padding: 20px;
+}
+
+nav a {
+	margin: 0 20px 0 0;
+	padding: 10px 20px;
+	text-decoration: none;
+}
+
+.widgets a {
+	text-decoration: none;
+}
+
+#main_content > * {
+	margin: 20px;
+}
+
+footer > p{
+	margin: 20px;
+}
+
+#big_widgets {
+	clear: both;
+}
+
+nav.single {
+	padding: 20px 0;
+	border-top: 1px solid #712e2d;
+}
